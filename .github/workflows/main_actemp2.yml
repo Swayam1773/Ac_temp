@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'actemp2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_459684AD38434B068C70BECF20E110C6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ABC5FE23AF4443E1A12F3E62AB15BB0B }}

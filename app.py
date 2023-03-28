@@ -1,10 +1,12 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template, url_for
 import pickle
+import gzip
 
 
 app = Flask(__name__)
-model = pickle.load(open('model1.pkl','rb'))
+with gzip.open('model1.pkl.gz', 'rb') as f:
+    model = pickle.load(f)
 
 
 @app.route('/')
